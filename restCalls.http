@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+###
+POST https://my-authentication-service-jwt.herokuapp.com/api/auth/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"hellohello",
+    "email":"hello@gmail.com",
+    "password":"password",
+    "roles":["user"]
+}
+
+###################################################
+POST https://my-api-gateway-ttt.herokuapp.com.herokuapp.com/api/auth/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"agent",
+    "password":"password"
+}
+
+
+###################################################
+###
+GET https://my-authentication-service-jwt.herokuapp.com/api/test/user HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2RlcmF0b3IiLCJpYXQiOjE2NDA1MTk4MzMsImV4cCI6MTY0MDYwNjIzM30.bAtfVd1OWZ9L7s0OBGTnkdvFr_ZyCSpg1HVjtIYKrzrqOg0dmGczlgGmVyJUDc8Aiv5IQH2zqiqDDE1KjxhA6A
+
+###################################################--Validate Token
+###
+POST http://localhost:8080/api/auth/validateToken?token=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZ2VudCIsImlhdCI6MTY0Mzg4NTAwNywiZXhwIjoxNjQzOTcxNDA3fQ.yeNC8d6N7xED7t_6cP7cDNkBa_1BiEUtTsdSqn4jaXhWxeBUVPNdqpM0o_-P7zyn_HZFjJzvqcR1FoESCbiKkw
+Content-Type: application/json
+
+
+
+###### ROLE CALLS ######
+GET https://my-authentication-service-jwt.herokuapp.com/api/roles/ROLE_USER 
+>>>>>>> e72b19445a4c77137c5340ad96299872812c5b7e
